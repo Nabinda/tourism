@@ -4,15 +4,21 @@ import 'package:flutter_speed_dial/flutter_speed_dial.dart';
 import 'package:provider/provider.dart';
 import 'package:tourism/models/hotels.dart';
 import 'package:tourism/provider/hotel_provider.dart';
+import 'package:tourism/widgets/hotel_slide_image.dart';
 
-class HotelDetailScreen extends StatelessWidget {
+class HotelDetailScreen extends StatefulWidget {
   static const routeName = "/hotel_detail_screen";
+
+  @override
+  _HotelDetailScreenState createState() => _HotelDetailScreenState();
+}
+
+class _HotelDetailScreenState extends State<HotelDetailScreen> {
   @override
   Widget build(BuildContext context) {
     final id = ModalRoute.of(context).settings.arguments.toString();
     final hotel =
         Provider.of<HotelProvider>(context, listen: false).findByName(id);
-    final imageURL = Provider.of<HotelProvider>(context).getImageURL(id);
     return Scaffold(
       appBar: AppBar(
         title: Text(
@@ -32,7 +38,6 @@ class HotelDetailScreen extends StatelessWidget {
                 borderRadius: BorderRadius.all(Radius.circular(16.0))),
           ),
           SpeedDialChild(
-              onTap: () {},
               child: Consumer<Hotel>(
                 builder: (ctx, builder, _) {
                   return IconButton(
@@ -52,23 +57,7 @@ class HotelDetailScreen extends StatelessWidget {
         child: Column(
           children: <Widget>[
             //Photo Slider
-            Container(
-              margin: EdgeInsets.only(bottom: 5.0),
-              height: MediaQuery.of(context).size.height * 0.25,
-              width: double.infinity,
-              child: Carousel(
-                images: [
-                  // NetworkImage(),
-                ],
-                animationDuration: Duration(seconds: 2),
-                dotSize: 5.0,
-                dotSpacing: 20.0,
-                dotColor: Colors.black,
-                indicatorBgPadding: 2.0,
-                dotBgColor: Colors.grey.withOpacity(0.5),
-                borderRadius: true,
-              ),
-            ),
+            HotelSlideImage(id),
             //End of Photo Slider
             //Other Information
             Container(

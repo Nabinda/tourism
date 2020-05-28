@@ -195,13 +195,12 @@ class HotelProvider with ChangeNotifier {
         isFavourite: false),
   ];
 
-  List<String> getImageURL(String id) {
-    final selectedHotel = findByName(id);
-    return selectedHotel.imageURL.toList();
-  }
-
   Hotel findByName(String id) {
     return _hotel.firstWhere((hotel) => hotel.id == id);
+  }
+
+  List<String> getImageURL(String id) {
+    return _hotel.firstWhere((hotel) => hotel.id == id).imageURL;
   }
 
   List<Hotel> findByLocation(String placeName) {

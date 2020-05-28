@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'package:tourism/models/hotels.dart';
-import 'package:tourism/provider/hotel_provider.dart';
 import 'package:tourism/screen/favourite_screen.dart';
 import 'package:tourism/screen/main_category_screen.dart';
 import 'package:tourism/screen/profile_screen.dart';
@@ -36,6 +33,15 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
       appBar: AppBar(
         title: Text(_pages[_selectedPageIndex]['title']),
         centerTitle: true,
+        actions: <Widget>[
+          FlatButton(
+            onPressed: () {},
+            child: Text(
+              "Bookings",
+              style: TextStyle(color: Colors.green),
+            ),
+          )
+        ],
       ),
       body: _pages[_selectedPageIndex]['page'],
       bottomNavigationBar: BottomNavigationBar(
