@@ -13,7 +13,7 @@ class HotelProvider with ChangeNotifier {
           "https://res.cloudinary.com/simplotel/image/upload/w_5000,h_3333/x_0,y_260,w_5000,h_2812,r_0,c_crop,q_90,fl_progressive/w_900,f_auto,c_fit/mango-hotels---manali/Rooms_In_Manali_,_Mango_Hotels_Manali_,_Comfort_Rooms_4",
           "https://jobrecruitment.net/wp-content/uploads/2019/03/mango-hotel-haridwar.jpg"
         ],
-        affordable: Cost.Affordable,
+        price: 2000,
         facilities: [
           "Free Wifi",
           "24 hours service",
@@ -32,7 +32,7 @@ class HotelProvider with ChangeNotifier {
           "https://res.cloudinary.com/simplotel/image/upload/w_5000,h_3333/x_0,y_260,w_5000,h_2812,r_0,c_crop,q_90,fl_progressive/w_900,f_auto,c_fit/mango-hotels---manali/Rooms_In_Manali_,_Mango_Hotels_Manali_,_Comfort_Rooms_4",
           "https://jobrecruitment.net/wp-content/uploads/2019/03/mango-hotel-haridwar.jpg"
         ],
-        affordable: Cost.Affordable,
+        price: 2000,
         facilities: [
           "Free Wifi",
           "24 hours service",
@@ -51,7 +51,7 @@ class HotelProvider with ChangeNotifier {
           "https://res.cloudinary.com/simplotel/image/upload/w_5000,h_3333/x_0,y_260,w_5000,h_2812,r_0,c_crop,q_90,fl_progressive/w_900,f_auto,c_fit/mango-hotels---manali/Rooms_In_Manali_,_Mango_Hotels_Manali_,_Comfort_Rooms_4",
           "https://jobrecruitment.net/wp-content/uploads/2019/03/mango-hotel-haridwar.jpg"
         ],
-        affordable: Cost.Affordable,
+        price: 2000,
         facilities: [
           "Free Wifi",
           "24 hours service",
@@ -70,7 +70,7 @@ class HotelProvider with ChangeNotifier {
           "https://res.cloudinary.com/simplotel/image/upload/w_5000,h_3333/x_0,y_260,w_5000,h_2812,r_0,c_crop,q_90,fl_progressive/w_900,f_auto,c_fit/mango-hotels---manali/Rooms_In_Manali_,_Mango_Hotels_Manali_,_Comfort_Rooms_4",
           "https://jobrecruitment.net/wp-content/uploads/2019/03/mango-hotel-haridwar.jpg"
         ],
-        affordable: Cost.Affordable,
+        price: 2000,
         facilities: [
           "Free Wifi",
           "24 hours service",
@@ -89,7 +89,7 @@ class HotelProvider with ChangeNotifier {
           "https://res.cloudinary.com/simplotel/image/upload/w_5000,h_3333/x_0,y_260,w_5000,h_2812,r_0,c_crop,q_90,fl_progressive/w_900,f_auto,c_fit/mango-hotels---manali/Rooms_In_Manali_,_Mango_Hotels_Manali_,_Comfort_Rooms_4",
           "https://jobrecruitment.net/wp-content/uploads/2019/03/mango-hotel-haridwar.jpg"
         ],
-        affordable: Cost.Affordable,
+        price: 2000,
         facilities: [
           "Free Wifi",
           "24 hours service",
@@ -108,7 +108,7 @@ class HotelProvider with ChangeNotifier {
           "https://res.cloudinary.com/simplotel/image/upload/w_5000,h_3333/x_0,y_260,w_5000,h_2812,r_0,c_crop,q_90,fl_progressive/w_900,f_auto,c_fit/mango-hotels---manali/Rooms_In_Manali_,_Mango_Hotels_Manali_,_Comfort_Rooms_4",
           "https://jobrecruitment.net/wp-content/uploads/2019/03/mango-hotel-haridwar.jpg"
         ],
-        affordable: Cost.Affordable,
+        price: 2000,
         facilities: [
           "Free Wifi",
           "24 hours service",
@@ -127,7 +127,7 @@ class HotelProvider with ChangeNotifier {
           "https://res.cloudinary.com/simplotel/image/upload/w_5000,h_3333/x_0,y_260,w_5000,h_2812,r_0,c_crop,q_90,fl_progressive/w_900,f_auto,c_fit/mango-hotels---manali/Rooms_In_Manali_,_Mango_Hotels_Manali_,_Comfort_Rooms_4",
           "https://jobrecruitment.net/wp-content/uploads/2019/03/mango-hotel-haridwar.jpg"
         ],
-        affordable: Cost.Affordable,
+        price: 2000,
         facilities: [
           "Free Wifi",
           "24 hours service",
@@ -146,7 +146,7 @@ class HotelProvider with ChangeNotifier {
           "https://res.cloudinary.com/simplotel/image/upload/w_5000,h_3333/x_0,y_260,w_5000,h_2812,r_0,c_crop,q_90,fl_progressive/w_900,f_auto,c_fit/mango-hotels---manali/Rooms_In_Manali_,_Mango_Hotels_Manali_,_Comfort_Rooms_4",
           "https://jobrecruitment.net/wp-content/uploads/2019/03/mango-hotel-haridwar.jpg"
         ],
-        affordable: Cost.Affordable,
+        price: 2000,
         facilities: [
           "Free Wifi",
           "24 hours service",
@@ -165,7 +165,7 @@ class HotelProvider with ChangeNotifier {
           "https://res.cloudinary.com/simplotel/image/upload/w_5000,h_3333/x_0,y_260,w_5000,h_2812,r_0,c_crop,q_90,fl_progressive/w_900,f_auto,c_fit/mango-hotels---manali/Rooms_In_Manali_,_Mango_Hotels_Manali_,_Comfort_Rooms_4",
           "https://jobrecruitment.net/wp-content/uploads/2019/03/mango-hotel-haridwar.jpg"
         ],
-        affordable: Cost.Affordable,
+        price: 2000,
         facilities: [
           "Free Wifi",
           "24 hours service",
@@ -184,7 +184,7 @@ class HotelProvider with ChangeNotifier {
           "https://res.cloudinary.com/simplotel/image/upload/w_5000,h_3333/x_0,y_260,w_5000,h_2812,r_0,c_crop,q_90,fl_progressive/w_900,f_auto,c_fit/mango-hotels---manali/Rooms_In_Manali_,_Mango_Hotels_Manali_,_Comfort_Rooms_4",
           "https://jobrecruitment.net/wp-content/uploads/2019/03/mango-hotel-haridwar.jpg"
         ],
-        affordable: Cost.Affordable,
+        price: 2000,
         facilities: [
           "Free Wifi",
           "24 hours service",

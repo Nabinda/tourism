@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:tourism/models/destination.dart';
 import 'package:tourism/screen/Hotel_Screen.dart';
+import 'package:tourism/screen/destination_detail_screen.dart';
 
 class DestinationWithImageItem extends StatelessWidget {
 //  final String id;
@@ -16,7 +17,7 @@ class DestinationWithImageItem extends StatelessWidget {
         Provider.of<Destination>(context, listen: false);
     return GestureDetector(
       onTap: () {
-        Navigator.pushNamed(context, HotelScreen.routeName,
+        Navigator.pushNamed(context, DestinationDetailScreen.routeName,
             arguments: selectedDestination.id);
       },
       child: Padding(

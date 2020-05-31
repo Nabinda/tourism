@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:tourism/screen/Hotel_order_screen.dart';
+import 'package:tourism/screen/cart_screen.dart';
 import 'package:tourism/screen/favourite_screen.dart';
 import 'package:tourism/screen/main_category_screen.dart';
 import 'package:tourism/screen/profile_screen.dart';
+
+enum FilterOptions { Cart, Bookings }
 
 class BottomBarScreen extends StatefulWidget {
   @override
@@ -34,36 +38,59 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
         title: Text(_pages[_selectedPageIndex]['title']),
         centerTitle: true,
         actions: <Widget>[
-          FlatButton(
-            onPressed: () {},
-            child: Text(
-              "Bookings",
-              style: TextStyle(color: Colors.green),
-            ),
-          )
+          PopupMenuButton(
+            icon: Icon(Icons.more_vert),
+            onSelected: (FilterOptions filterOption) {
+              if (filterOption == FilterOptions.Cart) {
+                //Navigator.pushNamed(context, );
+              } else {
+                // Navigator.pushNamed(context, );
+              }
+            },
+            itemBuilder: (_) => [
+              PopupMenuItem(
+                child: InkWell(
+                  onTap: () {
+                    Navigator.pushNamed(context, HotelOrderScreen.routeName);
+                  },
+                  child: Text(
+                    "Bookings",
+                    textAlign: TextAlign.left,
+                    style: TextStyle(color: Colors.green),
+                  ),
+                ),
+                value: FilterOptions.Bookings,
+              ),
+              PopupMenuItem(
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.pushNamed(context, CartScreen.routeName);
+                  },
+                  child: Text(
+                    "Cart",
+                    textAlign: TextAlign.left,
+                    style: TextStyle(color: Colors.green),
+                  ),
+                ),
+                value: FilterOptions.Cart,
+              ),
+            ],
+          ),
         ],
       ),
       body: _pages[_selectedPageIndex]['page'],
       bottomNavigationBar: BottomNavigationBar(
         onTap: _selectPage,
         currentIndex: _selectedPageIndex,
-        backgroundColor: Theme.of(context).primaryColor,
-        selectedItemColor: Colors.black,
+        selectedItemColor: Colors.green,
         unselectedItemColor: Colors.grey,
         type: BottomNavigationBarType.shifting,
         items: <BottomNavigationBarItem>[
+          BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('Home')),
           BottomNavigationBarItem(
-              backgroundColor: Theme.of(context).primaryColor,
-              icon: Icon(Icons.home),
-              title: Text('Home')),
+              icon: Icon(Icons.favorite), title: Text('Favourite')),
           BottomNavigationBarItem(
-              backgroundColor: Theme.of(context).primaryColor,
-              icon: Icon(Icons.favorite),
-              title: Text('Favourite')),
-          BottomNavigationBarItem(
-              backgroundColor: Theme.of(context).primaryColor,
-              icon: Icon(Icons.person),
-              title: Text('Profile')),
+              icon: Icon(Icons.person), title: Text('Profile')),
         ],
       ),
     );

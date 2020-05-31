@@ -7,7 +7,7 @@ class Hotel with ChangeNotifier {
   final String city;
   final String name;
   final String location;
-  final Cost affordable;
+  final double price;
   final List<String> imageURL;
   final List<String> facilities;
   final String contactNo;
@@ -19,7 +19,7 @@ class Hotel with ChangeNotifier {
       @required this.name,
       @required this.location,
       @required this.imageURL,
-      @required this.affordable,
+      @required this.price,
       @required this.facilities,
       @required this.contactNo,
       @required this.email,

@@ -26,6 +26,7 @@ dependencies:
   provider: ^4.0.4
   carousel_pro: ^1.0.0
   flutter_speed_dial: ^1.2.5
+  intl: ^0.16.1
 
 dev_dependencies:
   flutter_test:

@@ -17,7 +17,7 @@ class ProfileScreen extends StatelessWidget {
               "Nabin Dangol",
               style: TextStyle(
                 fontStyle: FontStyle.italic,
-                color: Colors.black,
+                color: Colors.grey,
                 fontSize: 30,
               ),
             ),
@@ -46,7 +46,7 @@ class ProfileScreen extends StatelessWidget {
                 leading: Icon(
                   Icons.call,
                   size: 20,
-                  color: Colors.grey,
+                  color: Colors.green,
                 ),
                 title: Text(
                   "+977-9803126622",
@@ -64,7 +64,7 @@ class ProfileScreen extends StatelessWidget {
                 leading: Icon(
                   Icons.email,
                   size: 20,
-                  color: Colors.grey,
+                  color: Colors.green,
                 ),
                 title: Text(
                   "nabindangol2@gmail.com",

@@ -35,20 +35,18 @@ class _MainCategoryScreenState extends State<MainCategoryScreen> {
             ),
           ),
           Divider(
-            color: Colors.black.withOpacity(0.1),
+            color: Colors.grey.withOpacity(0.5),
             thickness: 2,
           ),
           Container(
               height: MediaQuery.of(context).size.height * 0.35,
               width: double.infinity,
               child: DestinationWithImage()),
-          Divider(
-            color: Colors.black.withOpacity(0.1),
-            thickness: 2,
-          ),
+
           //--------End of Popular Destinations in Image Form-----------------
           //--------Other Destinations in tile Form-----------------
           Container(
+            margin: EdgeInsets.only(top: 5.0),
             width: double.infinity,
             child: Text(
               "OTHER DESTINATIONS",
@@ -59,12 +57,12 @@ class _MainCategoryScreenState extends State<MainCategoryScreen> {
             ),
           ),
           Divider(
-            color: Colors.black.withOpacity(0.1),
+            color: Colors.grey.withOpacity(0.5),
             thickness: 2,
           ),
           Container(
               height: 300,
-              width: double.infinity,
+              width: MediaQuery.of(context).size.width,
               child: DestinationTileFormat()),
           //--------Other Destinations in tile Form-----------------
         ],

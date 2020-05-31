@@ -13,7 +13,7 @@ class _HotelScreenState extends State<HotelScreen> {
     final id = ModalRoute.of(context).settings.arguments;
     return Scaffold(
       appBar: AppBar(
-        title: Text("Hotel"),
+        title: Text("Hotels Nearby $id"),
         centerTitle: true,
       ),
       body: HotelsTile(id),
